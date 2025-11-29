@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -61,3 +62,68 @@
 </body>
 </html>
 
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abril 15: La Saga Vikinga</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="viking-header">
+        <h1>¡Bienvenidos a Berk! La Ascensión de Abril</h1>
+        <nav>
+            <a href="#saga">La Saga</a>
+            <a href="#pergaminos">Homenajes</a>
+            <a href="#runas">Runas</a>
+            <a href="#trofeos">Trofeos</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="saga" class="content-section">
+            <h2>📜 La Saga de Abril: Forjando a una Jefa de Clan</h2>
+            </section>
+
+        <section id="pergaminos" class="content-section">
+            <h2>📜 Los Pergaminos de Homenaje</h2>
+            <form name="homenaje" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="homenaje" />
+                <input type="hidden" name="type" value="message" />
+                <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+                <label for="nombre">Tu Rango Vikingo:</label>
+                <input type="text" name="nombre" required>
+                <label for="mensaje">Tu Saga (Mensaje):</label>
+                <textarea name="mensaje" rows="5" required></textarea>
+                <button type="submit">¡Tallar en Runas!</button>
+            </form>
+            <div id="muro-mensajes">
+                </div>
+        </section>
+
+        <section id="runas" class="content-section">
+            <h2>🐲 El Nido del Cráneo (Mapa Rúnico)</h2>
+           <form name="runa" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
+       <input type="hidden" name="form-name" value="runa" />
+                <input type="hidden" name="type" value="word" />
+                <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+                <label for="word">Tu Runa de Poder (UNA SOLA PALABRA):</label>
+                <input type="text" name="word" required>
+                 <button type="submit">¡Lanza la Runa!</button>
+            </form>  
+            <div id="runa-mapa">
+                </div>
+        </section>
+
+        <section id="trofeos" class="content-section">
+            <h2>📸 El Salón de los Trofeos</h2>
+            </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+>>>>>>> 152d85dca141e365f2c2c1bef4e2d8d077de6c6f

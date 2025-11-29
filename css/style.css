@@ -1,0 +1,61 @@
+/* Paleta de Colores Vikinga */
+:root {
+    --color-tierra: #4e3a2e; /* Marrón oscuro */
+    --color-madera: #7d5a49; /* Marrón claro */
+    --color-metal: #a9a9a9; /* Gris plateado */
+    --color-fuego: #e87b32; /* Naranja quemado */
+    --color-fondo: #2c3e50; /* Azul oscuro brumoso */
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: white;
+    font-family: sans-serif; /* Usaremos una fuente simple por ahora */
+    margin: 0;
+}
+
+.viking-header {
+    background-color: var(--color-tierra);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid var(--color-fuego);
+}
+
+h1, h2 {
+    font-family: 'Georgia', serif; /* Simular un tallado en piedra */
+    color: var(--color-fuego);
+    text-shadow: 2px 2px var(--color-tierra);
+}
+
+.content-section {
+    padding: 40px 10%;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo semitransparente sobre la bruma */
+    border: 1px solid var(--color-madera);
+}
+
+form {
+    background-color: var(--color-madera);
+    padding: 20px;
+    border-radius: 5px;
+    color: var(--color-tierra);
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 2px solid var(--color-fuego);
+    background-color: #fff;
+}
+
+button {
+    background-color: var(--color-fuego);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
