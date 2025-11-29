@@ -40,14 +40,14 @@
 
         <section id="runas" class="content-section">
             <h2>🐲 El Nido del Cráneo (Mapa Rúnico)</h2>
-            <form name="runa" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                <input type="hidden" name="form-name" value="runa" />
+           <form name="runa" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
+       <input type="hidden" name="form-name" value="runa" />
                 <input type="hidden" name="type" value="word" />
                 <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
                 <label for="word">Tu Runa de Poder (UNA SOLA PALABRA):</label>
                 <input type="text" name="word" required>
-                <button type="submit">¡Lanza la Runa!</button>
-            </form>
+                 <button type="submit">¡Lanza la Runa!</button>
+            </form>  
             <div id="runa-mapa">
                 </div>
         </section>
@@ -60,3 +60,4 @@
     <script src="js/main.js"></script>
 </body>
 </html>
+
